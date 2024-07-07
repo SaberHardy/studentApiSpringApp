@@ -9,7 +9,7 @@ public class Student {
     private LocalDate date_of_birth;
     private int age;
 
-    public Student () {
+    public Student() {
 
     }
 
