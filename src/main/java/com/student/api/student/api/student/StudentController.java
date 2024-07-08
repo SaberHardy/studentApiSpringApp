@@ -26,4 +26,9 @@ public class StudentController {
         // @RequestBody will take the data from the request body and map it to the Student object
         studentService.addNewStudent(student);
     }
+
+    @DeleteMapping(path = "{studentId}")
+    public void deleteStudent(@PathVariable("studentId") Long student_id) {
+        studentService.deleteStudent(student_id);
+    }
 }
