@@ -40,6 +40,7 @@ public class StudentService {
             throw new IllegalStateException("student with id " + studentId + " does not exist");
         }
         studentRepository.deleteById(studentId);
+        System.out.println(studentRepository.findAll());
     }
 
     @Transactional
